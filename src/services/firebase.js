@@ -1,12 +1,12 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDnf5eMgTiFPgQmEbuqdyhU0BsTX4wM-o8",
-  authDomain: "slack-2-clone.firebaseapp.com",
-  projectId: "slack-2-clone",
-  storageBucket: "slack-2-clone.appspot.com",
-  messagingSenderId: "242858644925",
-  appId: "1:242858644925:web:c6e655342821d0af142ed4"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
